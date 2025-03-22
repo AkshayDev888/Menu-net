@@ -1,0 +1,64 @@
+/* General Styles */
+.container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  background: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .top-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .menu-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-items,
+  .cocktail-list,
+  .food-list,
+  .container { /* Ensures the container also adjusts */
+    width: 100%;
+    padding: 20px;
+  }
+
+  .cocktail,
+  .food-item {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-box {
+    margin-bottom: 15px;
+  }
+
+  button {
+    width: 100%; /* Makes buttons full width on mobile */
+    padding: 12px;
+  }
+}
